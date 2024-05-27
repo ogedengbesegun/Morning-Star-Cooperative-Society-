@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity=
+    "sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="/css/experi.css" />
+
+    <title>experi.js</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Running Experiments</h1>
+      
+      <?php
+      $t = date("Y"); 
+      $m = date("d/M/Y");
+      
+      $x = 45;
+      $y = 10;
+      
+      $z = $x * $y;
+      
+      echo $x, " * ", $y, " =  ",$z, ' ', 
+      "Hello + World!", " ", $t,' ',$m;
+      
+      // "the time has come to go home";
+      
+      ?>
+
+      <!-- input values -->
+      <input type="month" id="oracleNum" placeholder="Oracle Number" />
+      <input type="text" id="enterName" placeholder="Enter your Name" />
+
+      <nav>
+        <form action="">
+        <div>
+          <label for="password" name="fav_language">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            
+            placeholder="Enter Password"
+          />
+          <br />
+          <label for="username" name="fav_language">User Name:</label>
+          <input
+            type="text"
+            name="fav_language"
+            id="username"
+            placeholder="User Name"
+          />
+        </form>
+          <div class="btn textBox btnRadio btnCheckBox"></div>
+          <br />
+
+          <!-- a link into an email to send msg -->
+          <a
+            href="mailto:ogedengbe_segun@lagosstate.gov.ng, wisdomworld28608@gmail.com"
+            >Email_Customer</a>
+            
+          
+        </div>
+        <i class="fab fa-linkedin">save me</i>
+      </nav>
+    </section>
+
+    <!-- <video src="/video/Dangerous (2021) (NetNaija.com).mp4" type="video/ogg/mp4/webm"
+        width="300" height="150" controls></video>
+     -->
+    <!-- <iframe src="/html/msc1.html" frameborder="0" title="Good Morning Star" 
+     height="800" width="800"></iframe> -->
+
+    <br />
+
+    <!-- checkValidity Method -->
+    <div class="container btn-all">
+      <label for="id1">No Validation</label>
+      <input id="id1" type="number" min="1" max="3" />
+      <button type="button" onclick="myFunction()">OK</button>
+
+      <p id="demo"></p>
+      <br>
+      <p id="show"></p>
+    </div>
+    <br>
+    <div class="container">
+      <!-- <caption id="caption">Yes we can</caption> -->
+      <h4> </h4>
+      
+      <table><caption>Yes We can</caption>
+        
+
+        <tr>
+          <th>Surname</th>
+          <th>First Name</th>
+          <th>Sex</th>
+        </tr>
+        <tr>
+          <td>Adewale</td>
+          <td>Taiwo</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>Olayinka</td>
+          <td>Seun</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <td>Bolatito</td>
+          <td>Jideolu</td>
+          <td>M</td>
+        </tr>
+      </table>
+    </div>
+    <footer>we can serve you better</footer>
+    <script src="/js/experi.js"></script>
+    <!-- <script type="module" src="/php/me.php"></script> -->
+  </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+
+    <title>Morning-Star Cooperative</title>
+    <link rel="icon" type="image/x-icon" href="/png/ogd.png" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/msc1.css" />
+
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <section name="all" class="all">
+      <h2 id="h2">Welcome to Morning Star Cooperative Society.</h2>
+      <hr />
+      <section class="container grid grid-text">
+        <div class="first navbar-lg">
+          <h1 class="first-heading">Awa Olori Ire</h1>
+
+          <nav>
+            <div id="olori">
+              <ul>
+                <li>
+                  <a href="/html/msc1.html">Members Pictures</a>
+                  <a href="#">Members of the Excos</a>
+                  <a href="#">Happy family</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="last">
+          <h1 class="second-heading">Menu</h1>
+          <nav>
+            <div id="menu">
+              <ul>
+                <li>
+                  <a id="home" href="#">Home</a>
+                  <a id="features" href="#">Features</a>
+                  <a id="aboutUs" href="/html/msc2.html">About US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="third">
+          <h1 class="third-heading">Enquiries</h1>
+          <nav>
+            <div id="enquiries">
+              <ul>
+                <li>
+                  <a id="contact" href="#">Contact</a>
+                  <a id="help" href="#">Help</a>
+                  <a id="readMore" href="#">Read More</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <hr />
+      <section class="containers cards">
+        <div class="all-contents">
+          <h4></h4>
+          <div id="h4"></div>
+          <!-- <p id="oracle"></p>
+        <p id="ledger"></p> -->
+          <div id="login">
+            <div id="number">
+              <input
+                value=""
+                id="oracleNum"
+                name="oracleNum"
+                type="number"
+                inputmode="numeric"
+                placeholder="1. Enter Oracle Number"
+                required
+              />
+              <input
+                value=""
+                type="number"
+                name="logId"
+                id="logId"
+                inputmode="numeric"
+                placeholder="2. Enter Login ID Number"
+                required
+              />
+            </div>
+            <!--<marquee  behavior="" direction=""></marquee>-->
+
+            <input
+              id="yourName"
+              name="yourName"
+              type="text"
+              placeholder="Your Name Shows Here"
+              readonly="false"
+            />
+          </div>
+
+          <div id="clicks">
+            <select title="Monthly" name="Monthly" id="monthly">
+              <option value="monthly"></option>
+            </select>
+
+            <select title="yearly" name="yearly" id="yearly">
+              <option value="yearly"></option>
+            </select>
+            <button type="button" id="loginBtn">Login</button>
+            <button type="button" id="downloadBtn">Download Now</button>
+          </div>
+
+          <div id="errorMsg"></div>
+
+          <div class="localDate" onclick="myTimeout()"></div>
+        </div>
+      </section>
+
+      <section class="container" id="months">
+        <a id="13999" href="/Monthly/13999.pdf"></a>
+        <a id="15898" href="/Monthly/15898.pdf"></a>
+        <a id="20593" href="/Monthly/20593.pdf"></a>
+        <a id="179996" href="/Monthly/179996.pdf"></a>
+        <a id="165950" href="/Monthly/165950.pdf"></a>
+        <a id="191132" href="/Monthly/191132.pdf"></a>
+        <a id="165888" href="/Monthly/165888.pdf"></a>
+        <a id="191136" href="/Monthly/191136.pdf"></a>
+        <a id="13945" href="/Monthly/13945.pdf"></a>
+        <a id="16411" href="/Monthly/16411.pdf"></a>
+        <a id="167331" href="/Monthly/167331.pdf"></a>
+        <a id="216574" href="/Monthly/216574.pdf"></a>
+        <a id="38185" href="/Monthly/38185.pdf"></a>
+        <a id="41499" href="/Monthly/41499.pdf"></a>
+        <a id="223486" href="/Monthly/223486.pdf"></a>
+        <a id="41070" href="/Monthly/41070.pdf"></a>
+        <a id="46736" href="/Monthly/46736.pdf"></a>
+        <a id="36759" href="/Monthly/36759.pdf"></a>
+        <a id="191690" href="/Monthly/191690.pdf"></a>
+        <a id="16586" href="/Monthly/16586.pdf"></a>
+        <a id="216596" href="/Monthly/216596.pdf"></a>
+        <a id="190675" href="/Monthly/190675.pdf"></a>
+        <a id="191084" href="/Monthly/191084.pdf"></a>
+        <a id="175516" href="/Monthly/175516.pdf"></a>
+        <a id="69679" href="/Monthly/69679.pdf"></a>
+        <a id="32086" href="/Monthly/32086.pdf"></a>
+        <a id="38616" href="/Monthly/38616.pdf"></a>
+        <a id="160277" href="/Monthly/160277.pdf"></a>
+        <a id="16641" href="/Monthly/16641.pdf"></a>
+        <a id="173651" href="/Monthly/173651.pdf"></a>
+        <a id="221968" href="/Monthly/221968.pdf"></a>
+        <a id="37915" href="/Monthly/37915.pdf"></a>
+        <a id="219575" href="/Monthly/219575.pdf"></a>
+        <a id="14945" href="/Monthly/14945.pdf"></a>
+        <a id="16694" href="/Monthly/16694.pdf"></a>
+        <a id="46683" href="/Monthly/46683.pdf"></a>
+        <a id="190834" href="/Monthly/190834.pdf"></a>
+        <a id="32112" href="/Monthly/32112.pdf"></a>
+        <a id="216572" href="/Monthly/216572.pdf"></a>
+        <a id="16577" href="/Monthly/16577.pdf"></a>
+        <a id="39259" href="/Monthly/39259.pdf"></a>
+        <a id="190387" href="/Monthly/190387.pdf"></a>
+        <a id="216622" href="/Monthly/216622.pdf"></a>
+        <a id="190885" href="/Monthly/190885.pdf"></a>
+        <a id="153559" href="/Monthly/153559.pdf"></a>
+        <a id="192201" href="/Monthly/192201.pdf"></a>
+        <a id="160598" href="/Monthly/160598.pdf"></a>
+        <a id="10108" href="/Monthly/10108.pdf"></a>
+        <a id="193466" href="/Monthly/193466.pdf"></a>
+        <a id="41109" href="/Monthly/41109.pdf"></a>
+        <a id="38414" href="/Monthly/38414.pdf"></a>
+        <a id="173730" href="/Monthly/173730.pdf"></a>
+        <a id="16420" href="/Monthly/16420.pdf"></a>
+        <a id="14647" href="/Monthly/14647.pdf"></a>
+        <a id="174837" href="/Monthly/174837.pdf"></a>
+        <a id="200999" href="/Monthly/200999.pdf"></a>
+        <a id="14547" href="/Monthly/14547.pdf"></a>
+        <a id="187367" href="/Monthly/187367.pdf"></a>
+        <a id="157832" href="/Monthly/157832.pdf"></a>
+        <a id="217623" href="/Monthly/217623.pdf"></a>
+        <a id="9396" href="/Monthly/9396.pdf"></a>
+        <a id="18524" href="/Monthly/18524.pdf"></a>
+        <a id="223506" href="/Monthly/223506.pdf"></a>
+        <a id="190673" href="/Monthly/190673.pdf"></a>
+        <a id="13715" href="/Monthly/13715.pdf"></a>
+        <a id="41781" href="/Monthly/41781.pdf"></a>
+        <a id="179645" href="/Monthly/179645.pdf"></a>
+        <a id="16508" href="/Monthly/16508.pdf"></a>
+        <a id="218280" href="/Monthly/218280.pdf"></a>
+        <a id="223311" href="/Monthly/223311.pdf"></a>
+        <a id="165747" href="/Monthly/165747.pdf"></a>
+        <a id="17377" href="/Monthly/17377.pdf"></a>
+        <a id="196901" href="/Monthly/196901.pdf"></a>
+        <a id="190754" href="/Monthly/190754.pdf"></a>
+        <a id="216566" href="/Monthly/216566.pdf"></a>
+        <a id="180462" href="/Monthly/180462.pdf"></a>
+        <a id="17168" href="/Monthly/17168.pdf"></a>
+        <a id="191146" href="/Monthly/191146.pdf"></a>
+        <a id="182515" href="/Monthly/182515.pdf"></a>
+        <a id="15079" href="/Monthly/15079.pdf"></a>
+        <a id="190893" href="/Monthly/190893.pdf"></a>
+        <a id="216564" href="/Monthly/216564.pdf"></a>
+        <a id="153656" href="/Monthly/153656.pdf"></a>
+        <a id="174353" href="/Monthly/174353.pdf"></a>
+        <a id="223306" href="/Monthly/223306.pdf"></a>
+        <a id="192251" href="/Monthly/192251.pdf"></a>
+        <a id="17414" href="/Monthly/17414.pdf"></a>
+        <a id="36764" href="/Monthly/36764.pdf"></a>
+        <a id="190667" href="/Monthly/190667.pdf"></a>
+        <a id="15739" href="/Monthly/15739.pdf"></a>
+        <a id="17775" href="/Monthly/17775.pdf"></a>
+        <a id="180297" href="/Monthly/180297.pdf"></a>
+        <a id="43341" href="/Monthly/43341.pdf"></a>
+        <a id="214722" href="/Monthly/214722.pdf"></a>
+        <a id="18185" href="/Monthly/18185.pdf"></a>
+        <a id="32355" href="/Monthly/32355.pdf"></a>
+        <a id="192216" href="/Monthly/192216.pdf"></a>
+        <a id="191721" href="/Monthly/191721.pdf"></a>
+        <a id="192236" href="/Monthly/192236.pdf"></a>
+        <a id="218127" href="/Monthly/218127.pdf"></a>
+        <a id="173423" href="/Monthly/173423.pdf"></a>
+        <a id="42716" href="/Monthly/42716.pdf"></a>
+        <a id="173581" href="/Monthly/173581.pdf"></a>
+        <a id="41636" href="/Monthly/41636.pdf"></a>
+        <a id="223096" href="/Monthly/223096.pdf"></a>
+        <a id="187350" href="/Monthly/187350.pdf"></a>
+        <a id="159595" href="/Monthly/159595.pdf"></a>
+        <a id="37331" href="/Monthly/37331.pdf"></a>
+        <a id="201224" href="/Monthly/201224.pdf"></a>
+        <a id="190812" href="/Monthly/190812.pdf"></a>
+        <a id="153580" href="/Monthly/153580.pdf"></a>
+        <a id="18522" href="/Monthly/18522.pdf"></a>
+        <a id="15667" href="/Monthly/15667.pdf"></a>
+        <a id="37818" href="/Monthly/37818.pdf"></a>
+        <a id="192244" href="/Monthly/192244.pdf"></a>
+        <a id="16828" href="/Monthly/16828.pdf"></a>
+        <a id="192239" href="/Monthly/192239.pdf"></a>
+        <a id="201360" href="/Monthly/201360.pdf"></a>
+        <a id="201458" href="/Monthly/201458.pdf"></a>
+        <a id="191358" href="/Monthly/191358.pdf"></a>
+        <a id="41510" href="/Monthly/41510.pdf"></a>
+        <a id="13973" href="/Monthly/13973.pdf"></a>
+        <a id="19940" href="/Monthly/19940.pdf"></a>
+        <a id="17370" href="/Monthly/17370.pdf"></a>
+        <a id="218460" href="/Monthly/218460.pdf"></a>
+        <a id="37192" href="/Monthly/37192.pdf"></a>
+        <a id="41125" href="/Monthly/41125.pdf"></a>
+        <a id="37771" href="/Monthly/37771.pdf"></a>
+        <a id="74581" href="/Monthly/74581.pdf"></a>
+        <a id="219562" href="/Monthly/219562.pdf"></a>
+        <a id="166952" href="/Monthly/166952.pdf"></a>
+        <a id="223182" href="/Monthly/223182.pdf"></a>
+        <a id="219546" href="/Monthly/219546.pdf"></a>
+        <a id="191687" href="/Monthly/191687.pdf"></a>
+        <a id="17127" href="/Monthly/17127.pdf"></a>
+        <a id="222106" href="/Monthly/222106.pdf"></a>
+        <a id="182795" href="/Monthly/182795.pdf"></a>
+        <a id="191056" href="/Monthly/191056.pdf"></a>
+        <a id="190796" href="/Monthly/190796.pdf"></a>
+        <a id="17607" href="/Monthly/17607.pdf"></a>
+        <a id="37323" href="/Monthly/37323.pdf"></a>
+        <a id="160528" href="/Monthly/160528.pdf"></a>
+        <a id="18028" href="/Monthly/18028.pdf"></a>
+        <a id="187325" href="/Monthly/187325.pdf"></a>
+        <a id="180095" href="/Monthly/180095.pdf"></a>
+        <a id="222108" href="/Monthly/222108.pdf"></a>
+        <a id="16523" href="/Monthly/16523.pdf"></a>
+        <a id="153374" href="/Monthly/153374.pdf"></a>
+        <a id="218269" href="/Monthly/218269.pdf"></a>
+        <a id="219796" href="/Monthly/219796.pdf"></a>
+        <a id="16526" href="/Monthly/16526.pdf"></a>
+        <a id="17137" href="/Monthly/17137.pdf"></a>
+        <a id="192265" href="/Monthly/192265.pdf"></a>
+        <a id="5552" href="/Monthly/5552.pdf"></a>
+        <a id="13804" href="/Monthly/13804.pdf"></a>
+        <a id="37874" href="/Monthly/37874.pdf"></a>
+        <a id="173836" href="/Monthly/173836.pdf"></a>
+        <a id="190799" href="/Monthly/190799.pdf"></a>
+        <a id="165996" href="/Monthly/165996.pdf"></a>
+        <a id="182315" href="/Monthly/182315.pdf"></a>
+        <a id="36686" href="/Monthly/36686.pdf"></a>
+        <a id="193455" href="/Monthly/193455.pdf"></a>
+        <a id="18292" href="/Monthly/18292.pdf"></a>
+        <a id="6180" href="/Monthly/6180.pdf"></a>
+        <a id="166969" href="/Monthly/166969.pdf"></a>
+        <a id="153361" href="/Monthly/153361.pdf"></a>
+        <a id="16131" href="/Monthly/16131.pdf"></a>
+        <a id="15377" href="/Monthly/15377.pdf"></a>
+        <a id="174168" href="/Monthly/174168.pdf"></a>
+        <a id="190845" href="/Monthly/190845.pdf"></a>
+        <a id="38579" href="/Monthly/38579.pdf"></a>
+        <a id="191681" href="/Monthly/191681.pdf"></a>
+        <a id="17857" href="/Monthly/17857.pdf"></a>
+        <a id="218121" href="/Monthly/218121.pdf"></a>
+        <a id="37425" href="/Monthly/37425.pdf"></a>
+        <a id="182549" href="/Monthly/182549.pdf"></a>
+        <a id="173741" href="/Monthly/173741.pdf"></a>
+        <a id="191029" href="/Monthly/191029.pdf"></a>
+        <a id="162315" href="/Monthly/162315.pdf"></a>
+        <a id="223176" href="/Monthly/223176.pdf"></a>
+        <a id="180443" href="/Monthly/180443.pdf"></a>
+        <a id="219050" href="/Monthly/219050.pdf"></a>
+        <a id="201385" href="/Monthly/201385.pdf"></a>
+        <a id="174748" href="/Monthly/174748.pdf"></a>
+        <a id="219570" href="/Monthly/219570.pdf"></a>
+        <a id="15343" href="/Monthly/15343.pdf"></a>
+        <a id="37555" href="/Monthly/37555.pdf"></a>
+        <a id="18285" href="/Monthly/18285.pdf"></a>
+        <a id="205242" href="/Monthly/205242.pdf"></a>
+        <a id="157756" href="/Monthly/157756.pdf"></a>
+        <a id="190650" href="/Monthly/190650.pdf"></a>
+        <a id="187199" href="/Monthly/187199.pdf"></a>
+        <a id="37351" href="/Monthly/37351.pdf"></a>
+        <a id="32985" href="/Monthly/32985.pdf"></a>
+        <a id="190559" href="/Monthly/190559.pdf"></a>
+        <a id="201605" href="/Monthly/201605.pdf"></a>
+        <a id="218534" href="/Monthly/218534.pdf"></a>
+        <a id="16511" href="/Monthly/16511.pdf"></a>
+        <a id="165694" href="/Monthly/165694.pdf"></a>
+        <a id="190574" href="/Monthly/190574.pdf"></a>
+        <a id="16349" href="/Monthly/16349.pdf"></a>
+        <a id="161127" href="/Monthly/161127.pdf"></a>
+        <a id="43413" href="/Monthly/43413.pdf"></a>
+        <a id="201323" href="/Monthly/201323.pdf"></a>
+        <a id="201142" href="/Monthly/201142.pdf"></a>
+        <a id="187327" href="/Monthly/187327.pdf"></a>
+        <a id="223053" href="/Monthly/223053.pdf"></a>
+        <a id="37854" href="/Monthly/37854.pdf"></a>
+        <a id="37816" href="/Monthly/37816.pdf"></a>
+        <a id="202430" href="/Monthly/202430.pdf"></a>
+        <a id="191710" href="/Monthly/191710.pdf"></a>
+        <a id="18074" href="/Monthly/18074.pdf"></a>
+        <a id="17895" href="/Monthly/17895.pdf"></a>
+        <a id="13617" href="/Monthly/13617.pdf"></a>
+        <a id="192245" href="/Monthly/192245.pdf"></a>
+        <a id="173411" href="/Monthly/173411.pdf"></a>
+        <a id="165935" href="/Monthly/165935.pdf"></a>
+        <a id="153605" href="/Monthly/153605.pdf"></a>
+        <a id="173719" href="/Monthly/173719.pdf"></a>
+        <a id="155893" href="/Monthly/155893.pdf"></a>
+        <a id="216620" href="/Monthly/216620.pdf"></a>
+        <a id="16412" href="/Monthly/16412.pdf"></a>
+        <a id="218353" href="/Monthly/218353.pdf"></a>
+        <a id="160484" href="/Monthly/160484.pdf"></a>
+        <a id="36836" href="/Monthly/36836.pdf"></a>
+        <a id="218298" href="/Monthly/218298.pdf"></a>
+        <a id="222298" href="/Monthly/222298.pdf"></a>
+        <a id="216189" href="/Monthly/216189.pdf"></a>
+
+        <br />
+      </section>
+      <!-- all collectively -->
+    </section>
+    <section>
+      <form action="">
+        <fieldset>
+          <legend>This is our Picture Gallery <button type="button" class="btn-close" aria-label="Close"></button></legend>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/png/img0100.jpg" class="d-block w-100" alt="Beautiful land Scape">
+              </div>
+              <div class="carousel-item">
+                <img src="/png/img103.png" class="d-block w-100" alt="Beatiful picture">
+              </div>
+              <div class="carousel-item">
+                <img src="/png/img104.jpg" class="d-block w-100" alt="picture of rocks">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <h6 class="space1">Morning Star Cooperative Society</h6>
+        <h6>&copy;</h6>
+        <h6 id="copywrite" class="space"></h6>
+      </div>
+    </footer>
+    <!-- calling on Javascript too display(alert) some msg -->
+    <!-- <a id="javaAlert" href="javascript:alert(yourName.value.toUpperCase() + 
+    ' You are about to Download your Financial Statement, Please Click (Download Now) Button')"></a> -->
+
+    <script src="/js/msc1.js"></script>
+    <!-- <script src="/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/js/bootstrap.bundle.js"></script>
+
+    <!-- trying to see how the type attribute work for <script></script> -->
+    <!-- <script type="text/javascript" src="/js/msc1.js">
+      </script> -->
+  </body>
+</html>
