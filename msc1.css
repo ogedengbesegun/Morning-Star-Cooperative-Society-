@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 20px;
+}
+
+
+/*   */
+/* body */
+#h2 {
+  max-width: 90%;
+  margin: 30px auto;
+  overflow: auto;
+  padding: 20px 40px;
+  text-align: center;
+  color: #52d30cd6;
+  font-size: 50px;
+  background-color: #5e5c5c;
+  border-radius: 50px;
+  /* margin: 20px; */
+  padding: 20px;
+}
+
+body {
+  background: url(/png/Flowers/img12.jpg) ;
+  background-size: cover;
+
+  background-attachment: scroll;
+  line-height: 1.5;
+  /* margin: 20px; */
+}
+
+/* all the contents together  */
+
+/* container  */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.containers {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+/* grid   */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  align-content: center;
+  /* justify-content: space-between; */
+  border-bottom: #fff solid 4px;
+  background: var(--primary-color);
+  border-radius: 20px;
+
+  margin: 0 auto;
+
+  padding-top: 20px;
+  width: fit-content;
+}
+
+.grid-text{
+  background: rgb(5, 240, 161);
+}
+/*  first-heading */
+.first-heading,
+.second-heading,
+.third-heading {
+  font-size: 15px;
+}
+
+.first,
+.last,
+.third {
+  display: flex;
+  flex-direction: row;
+  /* gap: 1px; */
+
+  /* grid-template-columns: repeat(2, 1fr);
+  gap: 1px; */
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+.first a,
+.last a,
+.third a {
+  text-decoration: none;
+  padding:3px 3px;
+  margin:0 5px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  color: var(--bs-white);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.last a:hover,
+.first a:hover,
+.third a:hover {
+  border-radius: 15px;
+  background: var(--bs-white);
+  text-align: center;
+  padding: 5px;
+  /* width: -moz-fit-content;
+  width: fit-content; */
+  color: var(--bs-orange);
+}
+
+ul {
+  font-size: 15px;
+  list-style: none;
+}
+
+/*  login Input*/
+#login {
+  border-radius: 2px;
+  gap: 7px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*  ledgerNum Input*/
+
+/*  input*/
+input {
+  text-align: center;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 1px rgb(255, 0, 0) solid;
+  background-color: rgb(231, 231, 238);
+}
+
+/* remove the urgly line in the input*/
+input:focus {
+  outline: none;
+}
+/* removing the nasty inner spin button */
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* i located the placeholder in the iput element */
+input::placeholder {
+  font-size: 14px;
+  color: var(--bs-dark);
+}
+
+#oracleNum,
+#logId {
+  width: fit-content;
+  border-radius: 5px;
+
+  /* margin:0 5%; */
+  /* margin-right: 40%; */
+}
+
+#yourName {
+  border-radius: 5px;
+}
+
+/*  loginButton*/
+#loginBtn,
+#downloadBtn {
+  margin: 2px;
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: #c681ee 2px solid;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+#loginBtn:hover,
+#downloadBtn:hover {
+  font-size: 90%;
+}
+
+#loginBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+#downloadBtn:hover {
+  background-color: red;
+  color: white;
+}
+/*  monthly yearly login download*/
+#clicks {
+  margin: 10px;
+}
+
+/*  error msg*/
+
+#errorMsg {
+  color: red;
+  padding: 10px;
+  font-size: large;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* palcing the element h4 inbetween the containers and cards */
+#h4 {
+  margin: 0 auto;
+}
+
+/* #number, #logId{
+
+} */
+.cards {
+  /* position: fixed; */
+  background-color: rgb(90, 88, 88);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  width: max-content;
+}
+
+video {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* myTime */
+.myTime {
+  color: red;
+  padding: 7px;
+  margin-left: 70px;
+}
+
+/* revert from boottrap to have the 
+original properties of the elements */
+fieldset, legend {
+  all: revert;
+}
+
+fieldset{
+  margin-left: auto;
+  margin-right: auto ;
+  max-width: 40%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: red dotted 1px;
+}
+
+.footer {
+  /* background-color: #047aed; */
+  display: flex;
+  color: #f4f6f8;
+  text-align: center;
+  width: fit-content;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.localDate {
+  max-width: auto;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: #fff;
+  text-align: center;
+}
+
+/* trying to set up media query for small screens */
+@media (max-width: 720px) {
+  body {
+    background-image: url(/png/Flowers/img12SmScreen.png);
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  #h2 {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px 40px;
+    text-align: center;
+    color: #52d30cd6;
+    font-size: 25px;
+    background-color: #5e5c5c;
+    border-radius: 50px;
+    /* margin: 20px; */
+    padding: 20px;
+  }
+
+  .grid-text {
+    font-size: medium;
+    margin:0 0;
+
+  }
+
+ 
+
+  /* to ensure enough  space input element */
+  #login {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  /* setting the logID margin */
+  #logID {
+    margin-right: 5px;
+  }
+
+ 
+
+  /*all-content stylings to move all at ones   */
+  .all-contents {
+    margin-right: 30px;
+  }
+  /* input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  } */
+
+  .first a,
+.last a,
+.third a {
+  text-decoration: none;
+  padding:3px 3px;
+  margin:0 5px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  color: var(--bs-white);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+}
